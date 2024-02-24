@@ -9,13 +9,13 @@
 <body>
     <header>
         <nav>
-        <h1>HTML Hacks.</h1>
-        <i>Oswell Kudzai Mapauranga</i>
+            <h1>HTML Cheat Sheet</h1>
+            <i>Oswell Kudzai Mapauranga</i>
         </nav>
         <hr>
         <div>
-        <p>Hey there, coding comrades! Remember those days when <b>HTML</b> felt like a dusty textbook and <b>CSS</b> was a cryptic language spoken only by unicorns? Well, dust off your coding gloves, because I'm here to share some mind-blowing <b>HTML and CSS</b> tricks.</p>
-        <p>Sure, you know the basics – headings, paragraphs, and the occasional image. But what if I told you there's a hidden world of <b>HTML and CSS</b> superpowers waiting to be unlocked? Forget boring, predictable websites. We're talking dynamic forms, interactive elements, and visually stunning layouts – all achieved with a few clever code tweaks.</p>
+            <p>Hey there, coding comrades! Remember those days when <b>HTML</b> felt like a dusty textbook and <b>CSS</b> was a cryptic language spoken only by unicorns? Well, dust off your coding gloves, because I'm here to share some mind-blowing <b>HTML and CSS</b> tricks.</p>
+            <p>Sure, you know the basics – headings, paragraphs, and the occasional image. But what if I told you there's a hidden world of <b>HTML and CSS</b> superpowers waiting to be unlocked? Forget boring, predictable websites. We're talking dynamic forms, interactive elements, and visually stunning layouts – all achieved with a few clever code tweaks.</p>
         </div>
         <hr>
     </header>
@@ -25,43 +25,52 @@
             <div>
                 <p>Let's face it, <b>HTML</b> often gets overshadowed by its flashier cousin, <b>CSS</b>. But don't be fooled! This seemingly simple markup language holds hidden depths, packed with tricks that can boost your web development game. I'm talking about secret sauce nobody tells you about, the kind of knowledge passed down in hushed whispers amongst seasoned coders. Buckle up, because we're diving into the <b>HTML</b> underworld.</p>
             </div>
+
+            <!--Cheat 1-->
             <div>
-            <h3>Trick 1 : The Shapeshifting datalist: Autocomplete Your Way to Glory</h3>
+                <h3>Trick 1 : The Shapeshifting datalist: Autocomplete Your Way to Glory</h3>
             <div>
                 <p>Ever dream of creating a custom autocomplete dropdown without <b>JavaScript?</b> Well, dream no more! The datalist attribute is your new best friend. Just add it to your <code class="code-p">input</code> element, define a list of options within the same tag, and voila! Instant magic.</p>
             </div>
             <div class="example">
                 <h4>Example</h4>
-                <input type="text" list="cities">
+                <input type="text" list="cities" placeholder="Type or Select City">
                 <datalist id="cities">
                   <option value="Paris">
                   <option value="Tokyo">
                   <option value="New York">
                 </datalist>                 
             </div>
+
+            <!--Code example for Cheat 1-->
             <div class="code-container" role="text">
             <code>
-                <span class="code-block">
-                    <<span>details</span>=<span>"text" list</span>=<span>"cities"</span>>
-                </span>
-                <span class="code-block">
-                    <<span>datalist id</span>=<span>"cities"</span>>
-                </span>
-                <span class="code-block2">
-                    <<span>option value</span>=<span>"Paris"</span>>
-                </span>
-                <span class="code-block2">
-                    <<span>option value</span>=<span>"Tokyo"</span>>
-                </span>
-                <span class="code-block2">
-                    <<span>option value</span>=<span>"New York"</span>>
-                </span>
-                <span class="code-block">
-                    <<span>/</span>datalist<span></span>>
-                </span>
+                    <span class="code-block">
+                        <<span>input type="text" list="cities" placeholder<span>=</span><span>"Type or Select City"</span><span>></span></span>
+                    </span>
+                    <span class="code-block">
+                        <<span>details</span>=<span>"text" list</span>=<span>"cities"</span>>
+                    </span>
+                    <span class="code-block">
+                        <<span>datalist id</span>=<span>"cities"</span>>
+                    </span>
+                    <span class="code-block2">
+                        <<span>option value</span>=<span>"Paris"</span>>
+                    </span>
+                    <span class="code-block2">
+                        <<span>option value</span>=<span>"Tokyo"</span>>
+                    </span>
+                    <span class="code-block2">
+                        <<span>option value</span>=<span>"New York"</span>>
+                    </span>
+                    <span class="code-block">
+                        <<span>/</span>datalist<span></span>>
+                    </span>
             </code>
             </div>
             </div>
+
+            <!--Cheat 2-->
             <div>
                 <h3>Trick 2: The Collapsible Content: Expandable Sections with details:</h3>
                 <div>
@@ -75,6 +84,8 @@
                             <p>More updates are coming soon!</p>
                     </details>
                 </div>
+
+                <!--Code example for Cheat 2-->
                 <div class="code-container" role="text">
                 <code>
                     <span class="code-block">
@@ -85,12 +96,131 @@
                     </span>
                     <span class="code-block3">
                         <<span>p</span>><span>Exciting new features are coming soon!</span><<span>/</span><span>p</span>>
-                        </span>
-                        <span class="code-block3">
-                            <<span>p</span>><span>More updates are coming soon!</span><<span>/</span><span>p</span>>
-                            </span>
+                    </span>
+                    <span class="code-block3">
+                        <<span>p</span>><span>More updates are coming soon!</span><<span>/</span><span>p</span>>
+                    </span>
                     <span class="code-block">
                         <<span>/</span><span>datails</span>>
+                    </span>
+                </code>
+                </div>
+                </div>
+
+                <!--Cheat 3-->
+                <div>
+                <h3>Trick 3: The Collapsible Content: Expandable Sections with details:</h3>
+                <div>
+                    <p>Create interactive, collapsible sections for cleaner website layouts with the <code class="code-p">details</code> and <code class="code-p">summary</code> elements. Users can click the summary to reveal or hide the detailed content.</p>
+                </div>
+                <div class="example">
+                    <h4>Example</h4>
+                    <label for="framework">
+                        Select Framework:
+                    </label>
+                    <select id="framework">
+                        <optgroup label="Frontend">
+                            <option>React</option>
+                            <option>Angular</option>
+                            <option>Vue.js</option>
+                        </optgroup>
+                        <optgroup label="Backend">
+                            <option>Django</option>
+                            <option>Laravel</option>
+                            <option>Express.js</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <!--Code example for Cheat 3-->
+                <div class="code-container" role="text">
+                <code>
+                    <span class="code-block">
+                        <<span>label for="framework"</span>>
+                    </span>
+                    <span class="code-block2">Select Framework:</span>
+                    <span class="code-block">
+                        <<span>/</span><span>label</span>>
+                    </span>
+                    <span class="code-block">
+                        <<span>select id="framework"</span>>
+                    </span>
+                    <span class="code-block2">
+                        <<span>optgroup label="Frontend"</span>>
+                    </span>
+                    <span class="code-block3">
+                        <<span>option</span>><span>React</span><<span>/</span><span>option</span>>
+                    </span>
+                    <span class="code-block3">
+                         <<span>option</span>><span>Angular</span><<span>/</span><span>option</span>>
+                    </span>
+                    <span class="code-block3">
+                        <<span>option</span>><span>Vue.js</span><<span>/</span><span>option</span>>
+                    </span>
+                    <span class="code-block2">
+                        <<span>/</span><span>optgroup</span>>
+                    </span>
+                    <span class="code-block">
+                        <<span>/</span><span>select</span>>
+                    </span>
+                    <span class="code-block2">
+                        <<span>optgroup label="Backend"</span>>
+                    </span>
+                    <span class="code-block3">
+                        <<span>option</span>><span>Django</span><<span>/</span><span>option</span>>
+                    </span>
+                    <span class="code-block3">
+                         <<span>option</span>><span>Laravel</span><<span>/</span><span>option</span>>
+                    </span>
+                    <span class="code-block3">
+                        <<span>option</span>><span>Express.js</span><<span>/</span><span>option</span>>
+                    </span>
+                    <span class="code-block2">
+                        <<span>/</span><span>optgroup</span>>
+                    </span>
+                    <span class="code-block">
+                        <<span>/</span><span>select</span>>
+                    </span>
+                </code>
+                </div>
+                </div>
+
+                <!--Cheat 4-->
+            <div>
+                <h3>Trick 4: The Collapsible Content: Expandable Sections with details:</h3>
+                <div>
+                    <p>Create interactive, collapsible sections for cleaner website layouts with the <code class="code-p">details</code> and <code class="code-p">summary</code> elements. Users can click the summary to reveal or hide the detailed content.</p>
+                </div>
+                <div class="example">
+                    <h4>Example</h4>
+                    <p>5
+                        <sup>2</sup> = 25
+                    </p>
+                    <p>
+                        Water = H<sub>2</sub>O
+                    </p>
+                </div>
+
+                <!--Code example for Cheat 4-->
+                <div class="code-container" role="text">
+                <code>
+                    <span class="code-block">
+                        <<span>p</span>>
+                    </span>
+                    <span class="code-block2">
+                        5<span><</span>sup<span>></span>2<span><</span>/<span>sup</span>><span> = </span> 25
+                    </span>
+                    <span class="code-block">
+                        <<span>/</span><span>p</span>>
+                    </span>
+                    <span class="code-block">
+                        <<span>p</span>>
+                    </span>
+                    <span class="code-block2">
+                        Water<span>=</span>H<span><</span>sub<span>></span>2<span>0</span><<span>sub</span>><spa>O</spa>
+                    </span>
+                    <span class="code-block">
+                        <<span>/</span><span>p</span>>
                     </span>
                 </code>
                 </div>
