@@ -6,6 +6,7 @@ body{
     padding: 0 100px;
     font-family: Arial, Helvetica, sans-serif;
     color: #1f1f1f;
+    margin: 0 100px;
 }
 
 nav{
@@ -20,6 +21,8 @@ h1, h2, h3{
 div{
     padding-bottom: 10px;
 }
+
+/* Code Container*/
 .code-container{
     padding: 30px;
     margin-bottom: 50px;
@@ -42,10 +45,43 @@ div{
     font-size: 1rem;
 }
 
+/*Paragraphs*/
+p{
+    font-size: 1rem;
+}
+
 .example{
     padding: 10px 0;
 }
 
 .example h4{
     padding: 0;
+}
+
+/* Button */
+.scroll-to-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #1f1f1f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body:hover .scroll-to-top{
+    display: block;
+}
+/* Responsive*/
+
+@media only screen and (max-width: 1100px){
+    
+    body{
+        padding: 0 30px;
+        margin: 0 30px;
+    }
+
 }

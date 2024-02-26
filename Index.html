@@ -6,11 +6,12 @@
     <title>HTML & CSS Tricks</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
     <header>
         <nav>
             <h1>HTML Cheat Sheet</h1>
-            <i>Oswell Kudzai Mapauranga</i>
+            <p>By</p>
+            <i>Oswell Kudzai Mapuranga</i>
         </nav>
         <hr>
         <div>
@@ -28,7 +29,7 @@
 
             <!--Cheat 1-->
             <div>
-                <h3>Trick 1 : The Shapeshifting datalist: Autocomplete Your Way to Glory</h3>
+                <h3>Cheat 1 : The Shapeshifting datalist: Autocomplete Your Way to Glory</h3>
             <div>
                 <p>Ever dream of creating a custom autocomplete dropdown without <b>JavaScript?</b> Well, dream no more! The datalist attribute is your new best friend. Just add it to your <code class="code-p">input</code> element, define a list of options within the same tag, and voila! Instant magic.</p>
             </div>
@@ -72,7 +73,7 @@
 
             <!--Cheat 2-->
             <div>
-                <h3>Trick 2: The Collapsible Content: Expandable Sections with details:</h3>
+                <h3>Cheat 2: The Collapsible Content: Expandable Sections with details:</h3>
                 <div>
                     <p>Create interactive, collapsible sections for cleaner website layouts with the <code class="code-p">details</code> and <code class="code-p">summary</code> elements. Users can click the summary to reveal or hide the detailed content.</p>
                 </div>
@@ -109,9 +110,9 @@
 
                 <!--Cheat 3-->
                 <div>
-                <h3>Trick 3: The Collapsible Content: Expandable Sections with details:</h3>
+                <h3>Cheat 3: The Supercharged <code class="code-p">optgroup</code>: Organize Dropdowns Like a Pro</h3>
                 <div>
-                    <p>Create interactive, collapsible sections for cleaner website layouts with the <code class="code-p">details</code> and <code class="code-p">summary</code> elements. Users can click the summary to reveal or hide the detailed content.</p>
+                    <p>Remember that friend who always has the perfectly organized bookshelf, making finding the right book a breeze? That's the power you hold with the optgroup tag in <b>HTML!</b> It lets you group related options within your dropdown lists (select element), making them easier to navigate and scan for users.</p>
                 </div>
                 <div class="example">
                     <h4>Example</h4>
@@ -187,10 +188,11 @@
 
                 <!--Cheat 4-->
             <div>
-                <h3>Trick 4: The Collapsible Content: Expandable Sections with details:</h3>
+                <h3>Cheat 4: Superscript and Subscript: The Underdog Formatting Heroes</h3>
                 <div>
-                    <p>Create interactive, collapsible sections for cleaner website layouts with the <code class="code-p">details</code> and <code class="code-p">summary</code> elements. Users can click the summary to reveal or hide the detailed content.</p>
-                </div>
+                    <p>We all know about bold and italics, the formatting superstars of the <b>HTML</b> world. But there are two lesser-known heroes lurking in the shadows: subscript <code class="code-p">(sub)</code> and superscript <code class="code-p">(sup)</code> tags. These guys might not be the flashiest, but they pack a powerful punch when it comes to adding precision and clarity to your content.</p>
+                    <p>Think chemical formulas (H₂O), mathematical equations (a³ + b³ = (a + b)³), or even footnotes (¹see reference at the bottom). This is where these tags truly shine.</p>
+                    </div>
                 <div class="example">
                     <h4>Example</h4>
                     <p>5
@@ -225,7 +227,54 @@
                 </code>
                 </div>
                 </div>
+
+                <!--Cheat 5-->
+            <div>
+                <h3>Cheat 5: Beyond the Bar: Mastering the Meter Tag for Visually Engaging Progress Displays</h3>
+                <div>
+                    <p>Progress bars. We've all seen them, those rectangular strips filling up to indicate completion. But what if you could ditch the mundane and transform your progress displays into something truly engaging and dynamic? Enter the <code class="code-p">meter</code> tag, your secret weapon for crafting visually captivating progress indicators.</p>
+                    <p>Forget static images or generic bars. The <code class="code-p">meter</code> tag lets you define a visual representation of progress within a specified range. Imagine showing download progress as a filling water bottle, a quiz completion as a color-changing bar, or even a workout progress tracker as a glowing ring.</p>
+                </div>
+                <div class="example">
+                    <h4>Example</h4>
+                    <meter value="75" min="0" max="100">75%</meter>  
+                </div>
+
+                <!--Code example for Cheat 5-->
+                <div class="code-container" role="text">
+                <code>
+                    <span class="code-block">
+                        <<span>meter value=</span>"75" min=<span>"0" max=</span>"100"<span>></span>75%<span><</span>/<span>meter</span>>
+                    </span>
+                </code>
+                </div>
+                </div>
+
+                <!--Cheat 6-->
+            <div>
+                <h3>Cheat 6: The Unobtrusive <code class="code-p">abbr</code>:</h3>
+                <div>
+                    <p>Ever seen an acronym or abbreviation with a dotted underline? That's the work of the <code class="code-p">abbr</code> tag. It displays <b>abbreviations</b> and provides a <b>full explanation when hovered over</b> using the <code class="code-p">title</code> attribute, making your content accessible to everyone.
+                    </p>
+                </div>
+                <div class="example">
+                    <h4>Example</h4>
+                    <abbr title="World Wide Web">WWW</abbr>
+                </div>
+
+                <!--Code example for Cheat 6-->
+                <div class="code-container" role="text">
+                <code>
+                    <span class="code-block">
+                        <<span>abbr title=</span>"World Wide Web"<span>></span>WWW<span><</span>/<span>abbr</span>>
+                    </span>
+                </code>
+                </div>
+                </div>
         </div>
+    </section>
+    <section>
+        <a href="#top" class="scroll-to-top">Back to Top</a>
     </section>
 </body>
 </html>
