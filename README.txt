@@ -23,5 +23,3 @@ Contributions are welcome! If you have suggestions, improvements, or want to add
 Happy coding! 🚀✨
 
 ---
-
-Feel free to customize this description based on your preferences and additional details about the cheat sheet.
